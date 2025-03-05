@@ -1,0 +1,4 @@
+-- init.sql (MUST use LF line endings)
+CREATE DATABASE IF NOT EXISTS YOUR_DATABASE;
+ALTER USER 'DATABASE_USER'@'%' IDENTIFIED WITH caching_sha2_password BY 'Password';
+FLUSH PRIVILEGES;

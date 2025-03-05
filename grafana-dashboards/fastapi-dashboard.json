@@ -1,0 +1,21 @@
+{
+    "title": "FastAPI Monitoring",
+    "panels": [
+      {
+        "title": "Request Rate",
+        "type": "graph",
+        "targets": [{
+          "expr": "rate(http_request_duration_seconds_count[1m])",
+          "legendFormat": "{{method}} {{handler}}"
+        }]
+      },
+      {
+        "title": "Error Rate",
+        "type": "graph",
+        "targets": [{
+          "expr": "rate(http_request_duration_seconds_count{status=~'5..'}[1m])",
+          "legendFormat": "5xx Errors"
+        }]
+      }
+    ]
+  }

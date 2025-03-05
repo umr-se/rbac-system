@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+python-multipart
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1  # Explicitly include bcrypt
+pyjwt
+python-jose[cryptography]
+icalendar # Add explicit bcrypt requirement
+pymysql
+python-dotenv
+pydantic[email]
+email-validator==2.0.0.post2  # Required for email validation
+prometheus-fastapi-instrumentator==7.0.2 
+# pip install -e .     
